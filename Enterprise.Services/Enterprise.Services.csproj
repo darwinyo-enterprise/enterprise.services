@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Configuration Server\Enterprise.ConfigurationServer.DTO\Enterprise.ConfigurationServer.DTO.csproj" />
+    <ProjectReference Include="..\..\Logging Server\Enterprise.LoggingServer.DataLayers\Enterprise.LoggingServer.DataLayers.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Extension.NetStandard\Enterprise.Extension.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Helpers.NetStandard\Enterprise.Helpers.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Models.NetStandard\Enterprise.Models.NetStandard.csproj" />
+    <ProjectReference Include="..\Enterprise.Services.Interfaces\Enterprise.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
